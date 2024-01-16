@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* mulish google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+
+/* shared styles */
+body{
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+    --text-color:#FFF;
+}
+
+.btn-primary{
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* header section start */
+/* banner styles */
+
+header{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 50%), url('../Images/Group\ 13\ \(1\)\ \(1\).png') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.banner-info{
+    text-align: center;
+}
+.banner-title{
+    padding-top: 5rem;
+    color: var(--text-color);
+    font-size: 5rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+.banner-description{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding-bottom: 4.5rem;
+}
+
+.sorting-options{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+    
+}
+.sorting-options>div{
+    border-radius: 5px;
+    background: #FFF;
+    height: 2.5rem;
+    align-items: center;
+    width:18rem;
+}
+.destination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 7px;
+}
+#find-option{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+}
+
+/* main styles */
+
+.tour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.popular-tour-description{
+    width: 50%;
+}
+.tours-pics img{
+    width: 100%;
+}
+.popular-tour-description-title{
+    color: #131318;
+font-size: 2.5rem;
+font-weight: 700;
+
+padding-bottom: 1.25rem;
+}
+.popular-tour-description-info{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.popular-tour-description-info >li{
+    margin-left: 2rem;
+}
+.popular-tour-list-items{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    gap: 10px;
+}
+.btn{
+    margin-top: 1.75rem;
+}
+/* Responsive */
+
+@media screen and (max-width:576px) {
+    body{
+        width: 90%;
+    }
+    header{
+        background-size:cover;
+        padding: 5px;
+    }
+
+    .banner-title{
+        padding-top: 2rem;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .banner-description{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .sorting-options{
+        flex-direction: column;
+        padding: 2rem; 
+    }
+}
