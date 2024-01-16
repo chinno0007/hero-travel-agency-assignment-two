@@ -135,6 +135,186 @@ line-height: 26px; /* 162.5% */
 .btn{
     margin-top: 1.75rem;
 }
+
+/* travel spot */
+/* .row img{
+    width: 900px;
+    height: 100%;
+}
+.row2 img{
+    width: 100%;
+    height: 100%;
+} */
+.destination-text{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.row img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+
+}
+.row2{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr .9fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+
+}
+.row3{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+
+}
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seven{
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.row div{
+    flex: 3;
+}
+/* .row1,
+.row2{
+    display: flex;
+} */
+
+
+.first{
+    background-image: url('../Images/Rectangle\ 5.png');
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+}
+.second{
+    background-image: url('../Images/Rectangle\ 8.png');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.third{
+    background-image: url('../Images/Rectangle\ 6.png');
+    background-repeat: no-repeat;
+    
+    background-size:cover ;
+}
+.fourth{
+    background-image: url('../Images/Rectangle\ 7.png');
+    background-repeat: no-repeat;
+    
+    background-size:cover ;
+}
+.fifth{
+    background-image: url('../Images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    
+    background-size:cover ;
+}
+.sixth{
+    background-image: url('../Images/Rectangle\ 11.png');
+    background-repeat: no-repeat;
+    
+    background-size:cover ;
+}
+.seven{
+    background-image: url('../Images/Rectangle\ 10.png');
+    background-repeat: no-repeat;
+    
+    background-size:cover ;
+}
+/* Choose Us */
+.why-us{
+    margin: 100px 0px;
+}
+.hotels{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 1.5rem;
+}
+.hotels-title{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.service{
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 1.5rem;
+    }
+.choose-options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.best-price{
+    width: 573px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+.price-option{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 
 @media screen and (max-width:576px) {
@@ -158,6 +338,46 @@ line-height: 26px; /* 162.5% */
 
     .sorting-options{
         flex-direction: column;
-        padding: 2rem; 
+        padding: 3rem; 
     }
+    /* Tour Section */
+    .tour{
+        flex-direction: column;
+    }
+    .popular-tour-description{
+        width: 100%;
+    }
+    /* Destination */
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .row2{
+        grid-template-columns: repeat(1, 1fr);
+
+    
+    }
+    .row3{
+        grid-template-columns: repeat(1, 1fr);
+
+    
+    }
+    /* why choose us */
+
+    .hotels,
+    .service,
+    .best-price{
+        width: 80%;
+        height: 70%;
+        margin-bottom: 20px;
+    }
+    .choose-options{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .best-price{
+        margin-top: 0;
+    }
+
 }
