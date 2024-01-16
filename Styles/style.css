@@ -278,7 +278,7 @@ line-height: 26px; /* 162.5% */
     }
 .choose-options{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .best-price{
@@ -296,8 +296,90 @@ line-height: 26px; /* 162.5% */
     justify-content: center;
 }
 
+/* newsletter */
+.newsletter-description{
+    border-radius: 16px;
+border: 1px solid #FF5400;
+width: 37rem;
+height: 22.5rem;
+flex-shrink: 0;
+padding: 30px;
+text-align: center;
+}
+.newsletter-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="text"], 
+input[type="email"] {
+    width: 80%;
+    height: 52px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+}
+ 
+input[type="submit"]{
+    width: 87%;
+    height: 52px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.newsletter-pic{
+    border-radius: 16px;
+    width: 37rem;
+    height: 22.5rem;
+    padding: 30px;
+    text-align: center;
+}
+.newsletter-img{
+    border-radius: 16px;
+    width: 100%;
+    height: 30.5rem;
+    /* padding: 30px; */
+    text-align: center;
+    background-image: url('../Images/Rectangle\ 11.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 
-
+}
+.newsletter-img img{
+    width: 40rem;
+    height: 30.5rem;
+}
+.discount-web{
+    color: #FFF;
+font-size: 2rem;
+font-weight: 400;
+}
+.save{
+    color: #FFF;
+font-family: Mulish;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.box{
+    text-align: center;
+    padding-top: 20px;
+    width: 500px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: #FF5400;
+    transform: scale(45%) rotate(-45.628deg) translateY(650px);
+}
 
 
 
@@ -379,5 +461,42 @@ line-height: 26px; /* 162.5% */
     .best-price{
         margin-top: 0;
     }
+    /* Newsletter */
+    .newsletter-form{
+        flex-direction: column;
+    }
+    .newsletter-description{
+    width: 100%;
 
+    }
+    .newsletter-pic{
+        padding: 10px;
+        width: 90%;
+    }
+    .newsletter-img{
+
+        background-image: url('../Images/Rectangle\ 11.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: cover;
+    
+    }
+    .newsletter-img img{
+      width: 80%;
+      height: 70%;
+    }
+    .save{
+        color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    }
+    .box{
+        text-align: center;
+        padding-top: 20px;
+        width: 500px;
+        height: 100px;
+        border: 2px solid red;
+        background-color: #FF5400;
+        transform: scale(23%) rotate(-35.628deg) translateX(-150px) translateY(150px);
+    }
 }
