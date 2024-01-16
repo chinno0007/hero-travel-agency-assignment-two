@@ -278,6 +278,10 @@ line-height: 26px; /* 162.5% */
     
     background-size:cover ;
 }
+/* types of tourism */
+.tourism-types{
+    margin-top: 4rem;
+}
 /* Choose Us */
 .why-us{
     margin: 100px 0px;
@@ -369,6 +373,7 @@ input[type="submit"]{
     height: 22.5rem;
     padding: 30px;
     text-align: center;
+    margin-top: 2rem;
 }
 .newsletter-img{
     border-radius: 16px;
